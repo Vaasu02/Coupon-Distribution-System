@@ -1,0 +1,83 @@
+.coupon-card {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-lg);
+  max-width: 400px;
+  width: 100%;
+  animation: slideUp var(--transition-speed) var(--transition-timing);
+}
+
+.coupon-card-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 2px dashed var(--border-color);
+}
+
+.coupon-card-header h3 {
+  color: var(--text-primary);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-sm);
+}
+
+.coupon-value {
+  display: block;
+  color: var(--primary-color);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.coupon-card-body {
+  margin-bottom: var(--spacing-lg);
+}
+
+.coupon-code {
+  background: var(--bg-accent);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.coupon-code label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.coupon-code span {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+}
+
+.coupon-description {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.coupon-card-footer {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.coupon-card-footer button {
+  width: 100%;
+  max-width: 200px;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

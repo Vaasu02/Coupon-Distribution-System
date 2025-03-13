@@ -1,0 +1,49 @@
+.claim-status {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-lg) 0;
+  text-align: center;
+  animation: fadeIn var(--transition-speed) var(--transition-timing);
+}
+
+.claim-status.cooldown {
+  background: var(--bg-accent);
+  border: 1px solid var(--border-color);
+}
+
+.claim-status.blocked {
+  background: var(--error-bg);
+  border: 1px solid var(--error-color);
+}
+
+.status-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.status-icon {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.status-message p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.time-remaining {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
