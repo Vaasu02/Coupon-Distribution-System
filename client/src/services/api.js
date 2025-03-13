@@ -4,7 +4,7 @@ const BASE_URL = 'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
-  withCredentials: true, // Important for cookie handling
+  withCredentials: true, 
   headers: {
     'Content-Type': 'application/json'
   }
@@ -13,7 +13,6 @@ const api = axios.create({
 // Request interceptor
 api.interceptors.request.use(
   (config) => {
-    // You can add any request preprocessing here
     return config;
   },
   (error) => {

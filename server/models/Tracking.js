@@ -29,7 +29,7 @@ const trackingSchema = new mongoose.Schema({
   }
 }, { timestamps: true });
 
-// Create compound index for faster lookups
+// Created compound index for faster lookups
 trackingSchema.index({ ipAddress: 1, sessionId: 1 }, { unique: true });
 
 module.exports = mongoose.model('Tracking', trackingSchema); 
