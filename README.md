@@ -51,8 +51,7 @@ This application provides a fair coupon distribution system that assigns coupons
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/coupon-distribution-system.git
-   cd coupon-distribution-system
+   git clone https://github.com/Vaasu02/Coupon-Distribution-System.git
    ```
 
 2. Install backend dependencies:
@@ -201,9 +200,7 @@ The system implements multiple layers of protection to prevent abuse:
 5. Set other environment variables:
    ```bash
    heroku config:set NODE_ENV=production
-   heroku config:set COUPON_COOLDOWN_PERIOD=3600
-   heroku config:set BLOCK_DURATION=86400
-   heroku config:set SESSION_SECRET=your_session_secret_here
+   heroku config:set COUPON_CLAIM_COOLDOWN=3600
    ```
 6. Deploy the backend:
    ```bash
